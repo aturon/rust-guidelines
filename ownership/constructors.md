@@ -22,8 +22,15 @@ use vec::Vec;
 let mut v = Vec::new();
 ```
 
-This convention also applied to conversion constructors (prefix `from` rather
-than `new`).
+This convention also applies to conversion constructors (prefix `from` rather
+than `new`):
+
+```rust
+use vec::Vec;
+
+// construct a new vector from an existing slice
+let v = Vec::from_slice(&[1, 2, 3]);
+```
 
 ### Provide constructors for passive `struct`s with defaults. [RFC]
 
