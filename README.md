@@ -1,4 +1,4 @@
-% Rust Guidelines [working title]
+# Rust Guidelines [working title]
 
 This document collects the emerging principles, conventions, abstractions, and
 best practices for writing Rust code.
@@ -12,16 +12,20 @@ libraries.
 
 For now, you can find a rendered snapshot at
 [http://aturon.github.io/](http://aturon.github.io/).  After
-[some infrastructure work](https://github.com/aturon/rust-guidelines/issues/17), the snapshot will move somewhere more
-official.
+[some infrastructure work](https://github.com/aturon/rust-guidelines/issues/17), the snapshot will move somewhere more official.
 
 ### Building the document
 
 Like http://rustbyexample.com/, this guidelines document is written in
-the [`gitbook`](https://github.com/GitbookIO/gitbook) style. It can be
-compiled with a prototype tool,
-[`rustbook`](https://github.com/aturon/rust-book) that provides a
-minimal subset of `gitbook`'s functionality on top of `rustdoc`.
+the [`gitbook`][gb] style. It can be compiled with a prototype tool,
+[`rustbook`][rb], which provides a minimal subset of [`gitbook`][gb]'s 
+functionality on top of `rustdoc`.
+
+After installing [`rustbook`][rb], just run `rustbook build` in the
+root directory of your clone of this repository to build these docs.
+
+[gb]: https://github.com/GitbookIO/gitbook
+[rb]: https://github.com/steveklabnik/rustbook
 
 ### Guideline statuses
 
